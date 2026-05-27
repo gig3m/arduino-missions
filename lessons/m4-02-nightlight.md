@@ -22,13 +22,13 @@ This build has two parts: the **light sensor** (photocell + resistor) and the **
 
 The photocell is a resistor that changes — brighter light means less resistance. You pair it with a fixed 10kΩ resistor so the Arduino can measure the difference.
 
-1. Push the photocell into the breadboard. The two legs go in **two different rows**. (It has no + or –  — either direction is fine.)
-2. Run a wire from **one photocell leg's row** to the **5V pin** on the Arduino. This is the "top" of the sensor.
-3. Run a wire from the **same photocell leg's row** to **pin A0** on the Arduino. (A0 is in the "Analog In" group on the left side of the board.)
-4. Push the **10kΩ resistor** between the **other photocell leg's row** and a new empty row.
-5. Run a wire from that **empty row at the far end of the 10kΩ resistor** to a **GND pin** on the Arduino. This is the "bottom" of the sensor.
+1. Push the photocell into the breadboard. The two legs go in **two different rows**. (It has no + or –  — either direction is fine.) Let's call them **row A** and **row B**.
+2. Run a wire from **row A** to the **5V pin** on the Arduino. This is the "top" of the sensor.
+3. Push the **10kΩ resistor** so one end is in **row B** and the other end is in a **new empty row** (call it **row C**).
+4. Run a wire from **row C** to a **GND pin** on the Arduino. This is the "bottom" of the sensor.
+5. Run a wire from **row B** to **pin A0** on the Arduino. (A0 is in the "Analog In" group on the left side of the board.) **Important:** A0 goes to **row B** — the spot where the photocell meets the 10kΩ resistor — **not** to row A with the 5V wire.
 
-So the chain is: **5V → photocell → A0 (and → 10kΩ → GND)**. The A0 wire taps in between the photocell and the resistor — that's the key.
+So the chain is: **5V → photocell → row B → 10kΩ → GND**, and **A0 taps row B** — the spot in the middle. That middle tap is the key: it's the only spot whose voltage changes as the light changes.
 
 **LED:**
 
