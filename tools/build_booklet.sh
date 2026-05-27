@@ -1,27 +1,16 @@
 #!/usr/bin/env bash
-# Concatenate lesson sheets (in filename order) into one printable PDF.
+# Build the Arduino Missions PDFs into build/:
+#   parts-guide.pdf            - the parts spotter's guide
+#   mission-0.pdf .. mission-7.pdf - one PDF per mission
+#   arduino-missions.pdf       - the full booklet (parts guide + every mission)
 #
-# Two stages:
-#   1. pandoc  : Markdown -> a single standalone HTML (images embedded, CSS inlined)
-#   2. Chrome  : HTML -> PDF, headless.
-#
-# We use headless Chrome (not wkhtmltopdf) for stage 2 because the section-header
-# emoji (🎯 🧰 🔌 …) need a modern rendering engine — wkhtmltopdf's old QtWebKit
-# renders them as empty boxes. Override the browser with CHROME_BIN=/path/to/chrome.
+# Two stages: pandoc (Markdown -> standalone HTML, images embedded, CSS inlined),
+# then headless Chrome (HTML -> PDF). Chrome is required because the section-marker
+# emoji (🎯 🧰 🔌 …) need a modern engine; wkhtmltopdf drew them as empty boxes.
+# Override the browser with CHROME_BIN=/path/to/chrome.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 mkdir -p build
-
-sheets=$(ls lessons/m*-*.md | sort)
-echo "Building booklet from:"
-echo "$sheets"
-
-pandoc $sheets \
-  --metadata title="Arduino Missions" \
-  --css tools/booklet.css \
-  --resource-path=lessons \
-  --embed-resources --standalone \
-  -o build/arduino-missions.html
 
 # Locate a Chrome/Chromium binary (Mac default paths, then PATH names).
 CHROME=""
@@ -40,9 +29,31 @@ if [ -z "$CHROME" ]; then
   exit 1
 fi
 
-"$CHROME" --headless=new --disable-gpu --no-pdf-header-footer \
-  --print-to-pdf="$PWD/build/arduino-missions.pdf" \
-  "file://$PWD/build/arduino-missions.html" >/dev/null 2>&1
+# render <output-filename.pdf> <md file> [<md file> ...]
+render() {
+  local out="$1"; shift
+  pandoc "$@" \
+    --metadata title="Arduino Missions" \
+    --css tools/booklet.css \
+    --resource-path=lessons \
+    --embed-resources --standalone \
+    -o build/_tmp.html
+  "$CHROME" --headless=new --disable-gpu --no-pdf-header-footer \
+    --print-to-pdf="$PWD/build/$out" "file://$PWD/build/_tmp.html" >/dev/null 2>&1
+  rm -f build/_tmp.html
+  echo "  built build/$out"
+}
 
-rm build/arduino-missions.html
-echo "Built build/arduino-missions.pdf  (engine: $CHROME)"
+echo "Parts guide:"
+render parts-guide.pdf lessons/parts-guide.md
+
+echo "Per-mission PDFs:"
+for n in 0 1 2 3 4 5 6 7; do
+  files=$(ls lessons/m${n}-*.md 2>/dev/null | sort)
+  if [ -n "$files" ]; then render "mission-${n}.pdf" $files; fi
+done
+
+echo "Combined booklet:"
+render arduino-missions.pdf lessons/parts-guide.md $(ls lessons/m*-*.md | sort)
+
+echo "Done."

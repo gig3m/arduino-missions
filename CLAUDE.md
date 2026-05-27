@@ -54,7 +54,7 @@ deferred (pending whether the kid follows kit-image + word-steps OK). No Mermaid
 
 ## Build commands
 ```
-tools/build_booklet.sh    # lessons/*.md -> build/arduino-missions.pdf  (build/ is gitignored)
+tools/build_booklet.sh    # -> build/: parts-guide.pdf, mission-0..7.pdf, full arduino-missions.pdf  (build/ gitignored)
 tools/lint_sheet.sh ...   # check a sheet has all required sections
 ```
 **Booklet engine = pandoc (md→HTML) + headless Chrome (HTML→PDF).** Do NOT switch back to
@@ -62,9 +62,9 @@ wkhtmltopdf: its old QtWebKit renders the section-marker emoji as empty boxes. C
 auto-detected; override with `CHROME_BIN=/path/to/chrome`.
 
 ## Structure
-- `lessons/` — one printable sheet per build, named `m<mission>-<NN>-<slug>.md`.
+- `lessons/` — one printable sheet per build, named `m<mission>-<NN>-<slug>.md`; plus `parts-guide.md` (kid-friendly spotter's guide to every part).
 - `sketches/` — one ready-to-upload sketch per build.
-- `images/` — wiring/board pictures (reused from the kit).
+- `images/` — wiring/board pictures (reused from the kit); `images/parts/` — individual part photos for the guide.
 - `tools/` — `build_booklet.sh`, `lint_sheet.sh`, `booklet.css`.
 - `docs/superpowers/specs|plans/` — design spec and implementation plans.
 

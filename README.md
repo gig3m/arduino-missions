@@ -12,14 +12,15 @@ Kid-friendly, printable lessons for the **Elegoo UNO R3 Super Starter Kit** — 
 
 ## Lessons
 - `lessons/` — one printable sheet per build (`m0-…`, `m1-…`). `_template.md` is the skeleton.
+- `lessons/parts-guide.md` — a kid-friendly "spotter's guide" to every part (what it is, what it does, how it works).
 - `sketches/` — one ready-to-upload Arduino sketch per build.
-- `images/` — wiring/board pictures.
+- `images/` — wiring/board pictures; `images/parts/` — individual part photos for the guide.
 
 ## Build the printable booklet
 Needs `pandoc` + **Google Chrome** (or Chromium). Chrome renders the section-marker
 emoji correctly; wkhtmltopdf's old engine drew them as empty boxes.
 ```
-tools/build_booklet.sh   # -> build/arduino-missions.pdf
+tools/build_booklet.sh   # -> build/ : parts-guide.pdf, mission-0..7.pdf, and the full arduino-missions.pdf
 ```
 If Chrome isn't on a standard path: `CHROME_BIN=/path/to/chrome tools/build_booklet.sh`
 
