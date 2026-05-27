@@ -7,7 +7,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 ## 🧠 The Brain & Power
 
 ::: {.part}
-![Arduino Uno](../images/parts/uno-board.png){.part-img}
+![](../images/parts/uno-board.png){.part-img}
 
 ### Arduino Uno
 **What it does:** This is the brain — it runs your code and uses its pins to talk to everything else.  
@@ -16,7 +16,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Breadboard](../images/parts/breadboard.png){.part-img}
+![](../images/parts/breadboard.png){.part-img}
 
 ### Breadboard
 **What it does:** A board full of holes where you build circuits without any soldering.  
@@ -25,7 +25,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![USB Cable](../images/parts/usb-cable.png){.part-img}
+![](../images/parts/usb-cable.png){.part-img}
 
 ### USB Cable
 **What it does:** Carries your code from the computer into the Arduino, and powers the Arduino at the same time.  
@@ -34,7 +34,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![9V Battery](../images/parts/battery-9v.png){.part-img}
+![](../images/parts/battery-9v.png){.part-img}
 
 ### 9V Battery
 **What it does:** Powers the Arduino when there's no computer plugged in.  
@@ -43,7 +43,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Power Module](../images/parts/power-module.png){.part-img}
+![](../images/parts/power-module.png){.part-img}
 
 ### Power Module
 **What it does:** Puts steady 5V power along the side rails of the breadboard.  
@@ -52,7 +52,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Proto Shield](../images/parts/proto-shield.png){.part-img}
+![](../images/parts/proto-shield.png){.part-img}
 
 ### Proto Shield
 **What it does:** A board that sits right on top of the Uno so you can build a permanent project.  
@@ -65,7 +65,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 ## 🔗 Wires & Hidden Helpers
 
 ::: {.part}
-![Jumper Wires](../images/parts/jumper-wires.png){.part-img}
+![](../images/parts/jumper-wires.png){.part-img}
 
 ### Jumper Wires
 **What it does:** These bendy wires carry electricity between holes on the breadboard and the Arduino's pins.  
@@ -74,7 +74,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Dupont Wires](../images/parts/dupont-wires.png){.part-img}
+![](../images/parts/dupont-wires.png){.part-img}
 
 ### Dupont Wires
 **What it does:** Wires with a socket on one end for plugging straight into modules like sensors and motors.  
@@ -83,7 +83,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Resistor](../images/parts/resistor.png){.part-img}
+![](../images/parts/resistor.png){.part-img}
 
 ### Resistor
 **What it does:** Slows down electricity so parts don't get too much and burn out.  
@@ -92,7 +92,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Diode](../images/parts/diode.png){.part-img}
+![](../images/parts/diode.png){.part-img}
 
 ### Diode
 **What it does:** A one-way door for electricity — current can only flow in one direction through it.  
@@ -101,7 +101,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Transistor](../images/parts/transistor.png){.part-img}
+![](../images/parts/transistor.png){.part-img}
 
 ### Transistor
 **What it does:** A tiny electric switch — a small signal on one leg switches a bigger flow on or off.  
@@ -110,7 +110,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![74HC595 Shift Register](../images/parts/74hc595.png){.part-img}
+![](../images/parts/74hc595.png){.part-img}
 
 ### 74HC595 Shift Register
 **What it does:** Lets the Arduino control 8 things at once using only 3 pins.  
@@ -119,7 +119,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![L293D Motor Driver](../images/parts/l293d.png){.part-img}
+![](../images/parts/l293d.png){.part-img}
 
 ### L293D Motor Driver
 **What it does:** Lets the Arduino drive a motor's direction and speed.  
@@ -128,7 +128,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![ULN2003 Driver Board](../images/parts/uln2003-driver.png){.part-img}
+![](../images/parts/uln2003-driver.png){.part-img}
 
 ### ULN2003 Driver Board
 **What it does:** Powers the stepper motor's coils in exactly the right order.  
@@ -141,7 +141,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 ## 💡 Lights
 
 ::: {.part}
-![LED](../images/parts/led.png){.part-img}
+![](../images/parts/led.png){.part-img}
 
 ### LED
 **What it does:** A tiny light that glows when electricity flows through it.  
@@ -150,7 +150,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![RGB LED](../images/parts/rgb-led.png){.part-img}
+![](../images/parts/rgb-led.png){.part-img}
 
 ### RGB LED
 **What it does:** Three lights in one — red, green, and blue — so you can mix any color.  
@@ -163,7 +163,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 ## 🎛️ Buttons & Knobs
 
 ::: {.part}
-![Button](../images/parts/button.png){.part-img}
+![](../images/parts/button.png){.part-img}
 
 ### Button
 **What it does:** Connects the circuit while you hold it down, then breaks it when you let go.  
@@ -172,7 +172,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Potentiometer](../images/parts/potentiometer.png){.part-img}
+![](../images/parts/potentiometer.png){.part-img}
 
 ### Potentiometer
 **What it does:** A knob that changes how much resistance is in the circuit as you turn it.  
@@ -181,7 +181,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Tilt Switch](../images/parts/tilt-switch.png){.part-img}
+![](../images/parts/tilt-switch.png){.part-img}
 
 ### Tilt Switch
 **What it does:** Detects when it gets tilted — like a tiny balance sensor.  
@@ -190,7 +190,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Joystick](../images/parts/joystick.png){.part-img}
+![](../images/parts/joystick.png){.part-img}
 
 ### Joystick
 **What it does:** Two knobs in one — left/right AND up/down — plus a click when you press down.  
@@ -203,7 +203,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 ## 🔊 Sound
 
 ::: {.part}
-![Active Buzzer](../images/parts/active-buzzer.png){.part-img}
+![](../images/parts/active-buzzer.png){.part-img}
 
 ### Active Buzzer
 **What it does:** Makes one fixed beeping sound whenever it gets power.  
@@ -212,7 +212,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Passive Buzzer](../images/parts/passive-buzzer.png){.part-img}
+![](../images/parts/passive-buzzer.png){.part-img}
 
 ### Passive Buzzer
 **What it does:** Plays whatever pitch you tell it — so it can make tunes and melodies.  
@@ -225,7 +225,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 ## 👀 Sensors
 
 ::: {.part}
-![Photoresistor](../images/parts/photoresistor.png){.part-img}
+![](../images/parts/photoresistor.png){.part-img}
 
 ### Photoresistor
 **What it does:** Tells the Arduino how bright or dark it is.  
@@ -234,7 +234,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Thermistor](../images/parts/thermistor.png){.part-img}
+![](../images/parts/thermistor.png){.part-img}
 
 ### Thermistor
 **What it does:** Tells the Arduino how hot or cold it is.  
@@ -243,7 +243,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Ultrasonic Sensor](../images/parts/ultrasonic.png){.part-img}
+![](../images/parts/ultrasonic.png){.part-img}
 
 ### Ultrasonic Sensor
 **What it does:** Measures how far away something is, like a bat.  
@@ -252,7 +252,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![DHT11 Sensor](../images/parts/dht11.png){.part-img}
+![](../images/parts/dht11.png){.part-img}
 
 ### DHT11 Sensor
 **What it does:** Measures temperature AND how damp the air is (humidity) at the same time.  
@@ -265,7 +265,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 ## 🔢 Screens
 
 ::: {.part}
-![LCD1602 Screen](../images/parts/lcd1602.png){.part-img}
+![](../images/parts/lcd1602.png){.part-img}
 
 ### LCD1602 Screen
 **What it does:** Shows 2 rows of 16 letters or numbers — like a tiny text screen.  
@@ -274,7 +274,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![7-Segment Display (1 digit)](../images/parts/7seg-1digit.png){.part-img}
+![](../images/parts/7seg-1digit.png){.part-img}
 
 ### 7-Segment Display (1 digit)
 **What it does:** Shows one digit, 0 through 9, using 7 bars of light.  
@@ -283,7 +283,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![7-Segment Display (4 digit)](../images/parts/7seg-4digit.png){.part-img}
+![](../images/parts/7seg-4digit.png){.part-img}
 
 ### 7-Segment Display (4 digit)
 **What it does:** Four digits together — big enough for a clock or a score.  
@@ -296,7 +296,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 ## ⚙️ Movers
 
 ::: {.part}
-![Servo Motor](../images/parts/servo.png){.part-img}
+![](../images/parts/servo.png){.part-img}
 
 ### Servo Motor
 **What it does:** A motor that turns to an exact angle and holds it there.  
@@ -305,7 +305,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![DC Motor & Fan](../images/parts/dc-motor-fan.png){.part-img}
+![](../images/parts/dc-motor-fan.png){.part-img}
 
 ### DC Motor & Fan
 **What it does:** Spins fast when it gets power — pop the fan blade on top for a breeze.  
@@ -314,7 +314,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Stepper Motor](../images/parts/stepper-motor.png){.part-img}
+![](../images/parts/stepper-motor.png){.part-img}
 
 ### Stepper Motor
 **What it does:** Moves in precise tiny steps — great when you need exact turning.  
@@ -323,7 +323,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Relay](../images/parts/relay.png){.part-img}
+![](../images/parts/relay.png){.part-img}
 
 ### Relay
 **What it does:** An electric switch you can click with a small signal to turn a bigger circuit on or off.  
@@ -336,7 +336,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 ## 📺 Remote Control
 
 ::: {.part}
-![IR Receiver](../images/parts/ir-receiver.png){.part-img}
+![](../images/parts/ir-receiver.png){.part-img}
 
 ### IR Receiver
 **What it does:** An "eye" that sees the invisible infrared light coming from the remote.  
@@ -345,7 +345,7 @@ This is where you figure out what each part is, what it does, and how it works. 
 :::
 
 ::: {.part}
-![Remote Control](../images/parts/remote.png){.part-img}
+![](../images/parts/remote.png){.part-img}
 
 ### Remote Control
 **What it does:** Sends your button presses as invisible infrared light — just like a TV remote.  
