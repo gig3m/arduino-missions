@@ -44,6 +44,14 @@ PDF with `pdftoppm -png -r 200 -f <page> -l <page> "<pdf>" build/p` then
 `magick build/p-<page>.png -trim +repage images/<name>.png`. Custom Fritzing diagrams are
 deferred (pending whether the kid follows kit-image + word-steps OK). No Mermaid.
 
+## Gotchas (learned building the missions)
+- `arduino-cli` compile needs libs installed even for IDE built-ins: `arduino-cli lib install "LiquidCrystal"` / `"Servo"` / `"Stepper"` (the kid's IDE bundles them; the CLI doesn't). DHT11→`"SimpleDHT"`, IR→`"IRremote"`.
+- Don't name a constant `A4`/`A5`/… — those are Arduino analog-pin macros. Use a prefix (e.g. `NOTE_C4`).
+- IR: use current **IRremote v4** API (`#include <IRremote.hpp>`, `IrReceiver.begin/decode`, `decodedIRData.decodedRawData`). The kit's bundled IR sketch uses the obsolete v2 API — don't copy it.
+- HC-SR04 ultrasonic works **library-free** with `pulseIn` — prefer that over the kit's `SR04.h`.
+- Image extraction: prefer the kit's clean "Wiring diagram" (Fritzing) page over the "Example picture" photo; `-trim` keeps adjacent page text, so pick a page where the diagram is isolated.
+- Before building the booklet, verify every `../images/*.png` referenced by a sheet actually exists — subagents have referenced images without creating the files.
+
 ## Build commands
 ```
 tools/build_booklet.sh    # lessons/*.md -> build/arduino-missions.pdf  (build/ is gitignored)
