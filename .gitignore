@@ -3,3 +3,6 @@
 
 # Generated booklet output
 build/
+
+# Node
+node_modules/

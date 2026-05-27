@@ -1,0 +1,27 @@
+{
+  "name": "arduino-missions",
+  "version": "1.0.0",
+  "description": "Kid-friendly, printable lessons for the **Elegoo UNO R3 Super Starter Kit** — built for a 9-year-old working mostly on his own (grown-up nearby), on **Linux**.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gig3m/arduino-missions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gig3m/arduino-missions/issues"
+  },
+  "homepage": "https://github.com/gig3m/arduino-missions#readme",
+  "dependencies": {
+    "puppeteer-core": "^25.1.0"
+  }
+}

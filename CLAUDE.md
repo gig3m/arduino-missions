@@ -57,9 +57,13 @@ deferred (pending whether the kid follows kit-image + word-steps OK). No Mermaid
 tools/build_booklet.sh    # -> build/: parts-guide.pdf, mission-0..7.pdf, full arduino-missions.pdf  (build/ gitignored)
 tools/lint_sheet.sh ...   # check a sheet has all required sections
 ```
-**Booklet engine = pandoc (md→HTML) + headless Chrome (HTML→PDF).** Do NOT switch back to
-wkhtmltopdf: its old QtWebKit renders the section-marker emoji as empty boxes. Chrome
-auto-detected; override with `CHROME_BIN=/path/to/chrome`.
+**Booklet engine = pandoc (md→HTML) + Chrome via puppeteer-core (HTML→PDF).** Do NOT switch
+back to wkhtmltopdf: its old QtWebKit renders the section-marker emoji as empty boxes.
+Needs Node.js + a one-time `npm install` (puppeteer-core, gitignored under node_modules/).
+Chrome auto-detected; override with `CHROME_BIN=/path/to/chrome`. The footer (`<label> ·
+page N of M`) is set in `tools/html2pdf.js` via Chrome's footerTemplate — per-mission PDFs
+get "Mission N"; the combined booklet gets "Arduino Missions" (Chrome can't do a running
+per-page section name).
 
 ## Structure
 - `lessons/` — one printable sheet per build, named `m<mission>-<NN>-<slug>.md`; plus `parts-guide.md` (kid-friendly spotter's guide to every part).

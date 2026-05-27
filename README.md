@@ -17,8 +17,10 @@ Kid-friendly, printable lessons for the **Elegoo UNO R3 Super Starter Kit** — 
 - `images/` — wiring/board pictures; `images/parts/` — individual part photos for the guide.
 
 ## Build the printable booklet
-Needs `pandoc` + **Google Chrome** (or Chromium). Chrome renders the section-marker
-emoji correctly; wkhtmltopdf's old engine drew them as empty boxes.
+Needs `pandoc` + **Google Chrome** (or Chromium) + **Node.js**. Chrome renders the
+section-marker emoji correctly (wkhtmltopdf's old engine drew them as empty boxes);
+Node/puppeteer-core drives Chrome to add the page footer. **One-time:** run `npm install`.
+Each page footer reads e.g. `Mission 4 · page 3 of 10` so he doesn't get lost.
 ```
 tools/build_booklet.sh   # -> build/ : parts-guide.pdf, mission-0..7.pdf, and the full arduino-missions.pdf
 ```
