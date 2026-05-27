@@ -37,7 +37,14 @@ The **L** light blinks on for 1 second, off for 1 second, over and over. You sho
 
 ## 💡 What's happening
 
-Your code has two parts. `setup()` runs once when the board starts up — it gets pin 13 (the "L" light) ready to use. Then `loop()` runs again and again, forever. Inside `loop()`, `HIGH` turns the light on, `LOW` turns it off, and `delay` makes the board wait. That's really it — that's how almost every Arduino program works.
+Your code has two parts:
+
+- `setup()` runs once when the board turns on. It gets the "L" light (pin 13) ready to use.
+- `loop()` runs again and again, forever.
+
+Inside `loop()`: `HIGH` turns the light on. `LOW` turns it off. `delay` makes the board wait.
+
+That's really it — that's how almost every Arduino program works.
 
 ## 👨‍👩‍👧 Grown-up's corner
 

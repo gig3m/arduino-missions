@@ -48,7 +48,7 @@ Green lights up for a few seconds. Then it turns off and yellow comes on briefly
 
 - Make green last longer: find `delay(3000)` under the `// GREEN` comment and change it to `5000`. Upload. Now green stays on 5 full seconds — more like a real light.
 - Make yellow quicker: change its `delay(1000)` to `500`. Yellow should feel like a warning now.
-- **Bonus challenge:** can you make red blink three times before turning off? Hint: you'd need to turn `redPin` on and off inside a short loop.
+- **Bonus challenge:** can you make red blink three times before turning off? Hint: turn the red light on, wait a little, turn it off, wait a little — then do that three times in a row.
 
 ## 💡 What's happening
 

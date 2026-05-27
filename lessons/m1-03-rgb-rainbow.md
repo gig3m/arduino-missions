@@ -20,7 +20,7 @@ This LED has 4 legs — one for red, one for green, one for blue, and one that's
 2. **Longest leg (–) → GND pin** on the Arduino. This is the shared ground for all three colors.
 3. **Red leg** (next to the longest leg) → 220Ω resistor → **pin 6**.
 4. **Green leg** → 220Ω resistor → **pin 5**.
-5. **Blue leg** (on the other side of the longest leg) → 220Ω resistor → **pin 3**.
+5. **Blue leg** (the last leg, on the far side from the red one) → 220Ω resistor → **pin 3**.
 
 ![RGB wiring](../images/m1-rgb-breadboard.png)
 

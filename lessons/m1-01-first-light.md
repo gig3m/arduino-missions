@@ -49,7 +49,11 @@ Your LED blinks on and off twice a second — a quick, steady flash. Count: on-o
 
 ## 💡 What's happening
 
-Pin 8 turns on and off. When it's on (`HIGH`), electricity flows from the pin, through the resistor, through the LED, and into GND. The resistor is there to protect the LED — too much electricity would burn it out. The LED only lights up when the long leg is on the + side, which is why flipping it matters.
+Pin 8 turns on and off. When it's on (`HIGH`), electricity flows like this:
+
+**pin 8 → resistor → LED → GND**
+
+The resistor protects the LED — too much electricity would burn it out. And the LED only lights up when its long leg is on the + side. That's why flipping it matters.
 
 ## 👨‍👩‍👧 Grown-up's corner
 
