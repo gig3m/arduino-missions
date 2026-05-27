@@ -16,10 +16,12 @@ Kid-friendly, printable lessons for the **Elegoo UNO R3 Super Starter Kit** — 
 - `images/` — wiring/board pictures.
 
 ## Build the printable booklet
-Needs `pandoc` + `wkhtmltopdf`.
+Needs `pandoc` + **Google Chrome** (or Chromium). Chrome renders the section-marker
+emoji correctly; wkhtmltopdf's old engine drew them as empty boxes.
 ```
 tools/build_booklet.sh   # -> build/arduino-missions.pdf
 ```
+If Chrome isn't on a standard path: `CHROME_BIN=/path/to/chrome tools/build_booklet.sh`
 
 ## Check a sheet has all its sections
 ```
