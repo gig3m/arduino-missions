@@ -1,2 +1,5 @@
 # OS cruft
 .DS_Store
+
+# Generated booklet output
+build/
