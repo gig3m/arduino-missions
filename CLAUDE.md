@@ -72,4 +72,6 @@ Extracted kit (tutorial PDF + bundled `.ino` + libraries):
 `~/Downloads/elegoo_extract/` and `~/Downloads/elegoo_code/`.
 
 ## Status
-Mission 0 + Mission 1 shipped. Missions 2–7 in progress.
+All 8 missions (0–7) shipped — 23 lesson sheets + compile-verified sketches. Libraries
+used: SimpleDHT (M4 bonus), IRremote v4 (M7) — both have in-sheet install steps; LCD/
+Servo/Stepper are IDE built-ins.

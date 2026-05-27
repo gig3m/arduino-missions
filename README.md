@@ -36,5 +36,5 @@ sudo usermod -a -G dialout $USER   # then log out and back in
 The Uno shows up as `/dev/ttyACM0` (genuine) or `/dev/ttyUSB0` (CH340 clones).
 
 ## Status
-Pilot: Mission 0 + Mission 1 complete. Missions 2–7 pending feedback from real use.
-See `docs/superpowers/specs/` for the design and `docs/superpowers/plans/` for the plan.
+All 8 missions (0–7) complete — 23 lesson sheets + compile-verified sketches.
+See `docs/superpowers/specs/` for the design and `docs/superpowers/plans/` for the plans.
