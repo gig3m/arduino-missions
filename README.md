@@ -4,6 +4,8 @@ Kid-friendly, printable lessons for the **Elegoo UNO R3 Super Starter Kit**, wri
 kid of about 9 working mostly on their own (grown-up nearby), on **Linux**. They replace the
 kit's own PDF, which is pitched at adults and hard to follow on paper.
 
+![A sample mission sheet: Mission 1 · First Light, printed as two pages with its parts list, wiring picture and troubleshooting tips](docs/screenshot.png)
+
 ## How a mission works
 1. Print the booklet (or open a sheet on screen).
 2. Grab the parts listed on the sheet and build the circuit.
