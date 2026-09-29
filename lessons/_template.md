@@ -1,8 +1,8 @@
 <!--
 LESSON SHEET TEMPLATE — Arduino Missions
-Voice guide (write for a 9-year-old reading on his own):
+Voice guide (write for a 9-year-old reading on their own):
 - Short sentences (aim under ~15 words). One idea per sentence.
-- Talk TO him ("you", "let's"). Warm and a little playful.
+- Talk TO the reader ("you", "let's"). Warm and a little playful.
 - Plain words. If a real term is useful (resistor, pin), say it, then explain in 1 short line.
 - Every build must reach a working result fast. Celebrate the win.
 - Build sheets use ALL sections below. Mission 0 (orientation) may use a subset.
@@ -11,7 +11,7 @@ Voice guide (write for a 9-year-old reading on his own):
 # [Mission N · Title]
 
 ## 🎯 What you're making
-[One or two sentences. The cool thing he'll have at the end.]
+[One or two sentences. The cool thing they'll have at the end.]
 
 ## 🧰 Grab these parts
 - [ ] [part] × [qty]

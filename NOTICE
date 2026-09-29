@@ -1,0 +1,15 @@
+Third-party material in this repository
+=======================================
+
+The images under images/ (wiring diagrams) and images/parts/ (part photos)
+are taken from the ELEGOO "Super Starter Kit for UNO" tutorial PDF
+(V1.0.2019.09.17), distributed free with the kit and from elegoo.com:
+https://www.elegoo.com/blogs/arduino-projects
+
+Copyright (c) ELEGOO Inc. All rights reserved by their owner. They are
+included here so these lessons match the parts in the kit, and are not
+licensed under this repository's MIT or CC BY 4.0 terms.
+
+ELEGOO is a trademark of ELEGOO Inc. This project is independent and is not
+affiliated with or endorsed by ELEGOO. If you are ELEGOO and want these
+images removed, open an issue and they will be taken down promptly.

@@ -1,7 +1,8 @@
 # Arduino Missions
 
-Kid-friendly, printable lessons for the **Elegoo UNO R3 Super Starter Kit** — built for a
-9-year-old working mostly on his own (grown-up nearby), on **Linux**.
+Kid-friendly, printable lessons for the **Elegoo UNO R3 Super Starter Kit**, written for a
+kid of about 9 working mostly on their own (grown-up nearby), on **Linux**. They replace the
+kit's own PDF, which is pitched at adults and hard to follow on paper.
 
 ## How a mission works
 1. Print the booklet (or open a sheet on screen).
@@ -20,7 +21,7 @@ Kid-friendly, printable lessons for the **Elegoo UNO R3 Super Starter Kit** — 
 Needs `pandoc` + **Google Chrome** (or Chromium) + **Node.js**. Chrome renders the
 section-marker emoji correctly (wkhtmltopdf's old engine drew them as empty boxes);
 Node/puppeteer-core drives Chrome to add the page footer. **One-time:** run `npm install`.
-Each page footer reads e.g. `Mission 4 · page 3 of 10` so he doesn't get lost.
+Each page footer reads e.g. `Mission 4 · page 3 of 10` so a young reader doesn't get lost.
 ```
 tools/build_booklet.sh   # -> build/ : parts-guide.pdf, mission-0..7.pdf, and the full arduino-missions.pdf
 ```
@@ -40,4 +41,13 @@ The Uno shows up as `/dev/ttyACM0` (genuine) or `/dev/ttyUSB0` (CH340 clones).
 
 ## Status
 All 8 missions (0–7) complete — 23 lesson sheets + compile-verified sketches.
-See `docs/superpowers/specs/` for the design and `docs/superpowers/plans/` for the plans.
+
+## Credits and licensing
+- **Lesson text, sketches and tools:** by Kyle Arrington. The sketches and `tools/` are
+  [MIT](LICENSE); the lesson sheets and parts guide are
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- **Images:** the wiring diagrams in `images/` and the part photos in `images/parts/` come
+  from ELEGOO's *Super Starter Kit for UNO* tutorial and remain ELEGOO's property. They are
+  **not** covered by the licenses above. See [NOTICE](NOTICE).
+
+This project is not affiliated with or endorsed by ELEGOO.
